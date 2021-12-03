@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01-Core\Mars.Rover.Core.Contract\Mars.Rover.Core.Contract.csproj" />
+    <ProjectReference Include="..\..\02-Domain\Mars.Rover.Domain.Context\Mars.Rover.Domain.Context.csproj" />
+    <ProjectReference Include="..\..\02-Domain\Mars.Rover.Domain.Repository\Mars.Rover.Domain.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

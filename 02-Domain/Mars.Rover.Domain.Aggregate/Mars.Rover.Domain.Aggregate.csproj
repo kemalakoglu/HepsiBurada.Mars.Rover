@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01-Core\Mars.Rover.Core.Contract\Mars.Rover.Core.Contract.csproj" />
+    <ProjectReference Include="..\..\01-Core\Mars.Rover.Core.Helper\Mars.Rover.Core.Helper.csproj" />
+    <ProjectReference Include="..\Mars.Rover.Domain.Contract\Mars.Rover.Domain.Contract\Mars.Rover.Domain.Contract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MediatR">
+      <HintPath>C:\Users\kemal.akoglu\.nuget\packages\mediatr\7.0.0\lib\netstandard2.0\MediatR.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

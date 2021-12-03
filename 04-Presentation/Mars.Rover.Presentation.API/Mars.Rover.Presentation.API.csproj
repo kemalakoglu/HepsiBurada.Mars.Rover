@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="swagger\**" />
+    <Content Remove="swagger\**" />
+    <EmbeddedResource Remove="swagger\**" />
+    <None Remove="swagger\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="8.6.2" />
+    <PackageReference Include="IdentityServer4" Version="4.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="3.1.5" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.3" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="serilog.sinks.elasticsearch" Version="8.1.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01-Core\Mars.Rover.Core.Contract\Mars.Rover.Core.Contract.csproj" />
+    <ProjectReference Include="..\..\01-Core\Mars.Rover.Core.Enumeration\Mars.Rover.Core.Enumeration.csproj" />
+    <ProjectReference Include="..\..\01-Core\Mars.Rover.Core.Helper\Mars.Rover.Core.Helper.csproj" />
+    <ProjectReference Include="..\..\01-Core\Mars.Rover.Core.Resources\Mars.Rover.Core.Resources.csproj" />
+    <ProjectReference Include="..\..\02-Domain\Mars.Rover.Domain.Aggregate\Mars.Rover.Domain.Aggregate.csproj" />
+    <ProjectReference Include="..\..\02-Domain\Mars.Rover.Domain.Context\Mars.Rover.Domain.Context.csproj" />
+    <ProjectReference Include="..\..\02-Domain\Mars.Rover.Domain.Repository\Mars.Rover.Domain.Repository.csproj" />
+    <ProjectReference Include="..\..\03-Application\Mars.Rover.Application.Contract\Mars.Rover.Application.Contract.csproj" />
+    <ProjectReference Include="..\..\03-Application\Mars.Rover.Application.Service\Mars.Rover.Application.Service.csproj" />
+    <ProjectReference Include="..\..\03-Application\Mars.Rover.Application.UnitOfWork\Mars.Rover.Application.UnitOfWork.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
