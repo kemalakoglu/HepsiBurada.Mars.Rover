@@ -57,8 +57,9 @@ Swagger
 *** Using Swagger***
 https://localhost:44364/swagger/index.html
 
-**** Basic Request****
+*** Basic Request***
  Select /api/Navigate/NavigateMarsRover as POST Method
+ 
 Example Request;
 {
   "parameters": [
@@ -66,6 +67,7 @@ Example Request;
   ]
 }
 Example Response;
+
 {
   "data": [
     {
